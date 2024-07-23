@@ -1,0 +1,109 @@
+/*!************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./assets/src/blocks/opry-timeline/editor.css ***!
+  \************************************************************************************************************************************************************************************************/
+html :where(.wp-block) {
+    margin: 0 !important;
+    max-width: 100% !important;
+}
+
+.is-root-container.is-desktop-preview.is-layout-constrained.wp-block-post-content-is-layout-constrained.has-global-padding.wp-block-post-content.block-editor-block-list__layout {
+    padding: 0 !important;
+}
+
+.opry-timeline__timeline-individual-story-wrapper::before {
+    z-index: 0;
+}
+
+.opry-timeline__story-modification {
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	display: none;
+	z-index: 10;
+}
+
+.opry-timeline__timeline-story-image {
+    z-index: 1;
+}
+
+.opry-timeline__timeline-individual-story-wrapper:hover .opry-timeline__story-modification {
+	display: block;
+}
+
+i.dashicons.dashicons-cloud-upload::before  {
+	font-size: 100px;
+    color: rgb(35, 33, 33);
+	cursor: pointer;
+    padding: 0 245px;
+}
+
+i.dashicons.dashicons-cloud-upload {
+	background-color: rgb(251, 247, 247);
+    width: -moz-max-content;
+    width: max-content;
+	height: auto;
+	border-radius: 30px;
+	cursor: pointer;
+}
+
+button.components-button.opry-timeline__change-img {
+    position: absolute;
+}
+button.components-button.opry-timeline__story-customizer {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 20px;
+}
+
+i.dashicons.dashicons-no-alt::before,
+i.dashicons.dashicons-edit::before,
+i.dashicons.dashicons-plus-alt::before,
+i.dashicons.dashicons-saved::before,
+i.dashicons.dashicons-admin-customizer::before,
+i.dashicons.dashicons-arrow-up-alt2::before,
+i.dashicons.dashicons-arrow-down-alt2::before {
+	font-size: 30px;
+	color: white;
+	cursor: pointer;
+}
+
+i.dashicons.dashicons-no-alt,
+i.dashicons.dashicons-edit,
+i.dashicons.dashicons-plus-alt,
+i.dashicons.dashicons-saved,
+i.dashicons.dashicons-admin-customizer,
+i.dashicons.dashicons-arrow-up-alt2,
+i.dashicons.dashicons-arrow-down-alt2 {
+	width: -moz-max-content;
+	width: max-content;
+	height: auto;
+	background-color: black;
+	border-radius: 30px;
+	cursor: pointer;
+}
+
+.opry-timeline__edit-mode-on {
+    margin: 50px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.opry-timeline__timeline-story-details-wrapper::before,
+.opry-timeline__timeline-individual-story-wrapper::after {
+	z-index: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .opry-timeline__timeline-story-details-card {
+        min-width: 40%;
+    }
+
+    i.dashicons.dashicons-cloud-upload::before  {
+        padding: 0 135px;
+    }
+}
+
+
+/*# sourceMappingURL=index.css.map*/

@@ -1,0 +1,66 @@
+{
+  "schema": "https://schema.wp.org/trunk/block.json",
+  "name": "opry-block/opry-timeline",
+  "version": "0.1.0",
+  "title": "Opry Timeline",
+  "category": "opry-blocks-custom-category",
+  "icon": "excerpt-view",
+  "description": "Timeline Block for showing things based on the time.",
+  "keywords": [
+    "Opry timeline",
+    "timeline"
+  ],
+  "supports": {
+    "html": false
+  },
+  "textdomain": "opry-block",
+  "attributes": {
+    "timelineHeading": {
+      "type": "string",
+      "default": ""
+    },
+    "timelineHeadingTag": {
+      "type": "string",
+      "default": "h1"
+    },
+    "timelineHeadingColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "isCustomHeadingSize": {
+      "type": "boolean",
+      "default": false
+    },
+    "timelineHeadingSize": {
+      "type": "number",
+      "default": 30
+    },
+    "timelineDescription": {
+      "type": "string",
+      "default": ""
+    },
+    "timelineDescriptionColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "storyCards": {
+      "type": "array",
+      "default": []
+    },
+    "cardDetailHeading": {
+      "type": "string",
+      "default": ""
+    },
+    "cardDetailDescription": {
+      "type": "string",
+      "default": ""
+    },
+    "timelineMode": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "editorStyle": "file:./index.css"
+}
