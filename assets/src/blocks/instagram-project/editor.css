@@ -1,0 +1,201 @@
+/* Style at the Editor end only */
+.pog-products__edit-mode-on {
+	text-align: center;
+}
+
+html :where(.wp-block) {
+	max-width: 980px;
+}
+
+.pog-products__products-listout {
+	padding: 14px 10px;
+}
+
+.pog-products__individual-product-wrapper {
+	position: relative;
+	min-width: 310px;
+	max-width: 310px;
+	max-height: initial;
+	display: flex;
+	flex-direction: column;
+}
+
+.pog-products__products-wrapper .draggable {
+	position: relative;
+	z-index: 10;
+}
+
+.pog-products__individual-product-wrapper.editing {
+	pointer-events: none;
+}
+
+.pog-products__product-modification {
+	display: none;
+	position: absolute;
+	top: -25px;
+}
+
+.pog-products__individual-product-wrapper:hover .pog-products__product-modification {
+	display: block;
+}
+
+.pog-products__individual-product-wrapper {
+	padding: 30px 14px;
+}
+
+.pog-products__individual-product-wrapper button.components-button.pog-products__change-img {
+	position: absolute;
+	top: 30px;
+}
+
+.pog-products__individual-product-wrapper button.components-button.pog-products__remove-img {
+	position: absolute;
+	top: 30px;
+	left: 60px;
+}
+
+.pog-products__remove-img svg {
+	border-radius: 50%;
+	color: white;
+	background-color: black;
+}
+
+.pog-products__individual-product-wrapper h3.block-editor-rich-text__editable.rich-text {
+	margin: 8px 0;
+}
+
+.pog-products__individual-product-wrapper button.components-button.pog-products__upload-img {
+	height: 289px;
+	width: 100%;
+}
+
+button.components-button.pog-products__product-url-edit {
+	margin: 63px 0 0;
+}
+
+.pog-products__remove-product i.dashicons.dashicons-no-alt::before,
+.pog-products__change-img i.dashicons.dashicons-edit::before,
+.pog-products__add-story-btn i.dashicons.dashicons-plus-alt::before,
+.pog-products__upload-img i.dashicons.dashicons-cloud-upload::before {
+	font-size: 30px;
+	color: white;
+	cursor: pointer;
+}
+
+
+.pog-products__remove-product i.dashicons.dashicons-no-alt,
+.pog-products__change-img i.dashicons.dashicons-edit,
+.pog-products__add-story-btn i.dashicons.dashicons-plus-alt {
+	width: max-content;
+	height: auto;
+	background-color: black;
+	border-radius: 30px;
+	cursor: pointer;
+}
+
+.pog-products__upload-img i.dashicons.dashicons-cloud-upload::before {
+	font-size: 60px;
+	color: black;
+	cursor: pointer;
+}
+
+.pog-products__upload-img i.dashicons.dashicons-cloud-upload {
+	width: 100%;
+	height: auto;
+	border-radius: 30px;
+	cursor: pointer;
+}
+
+/* Tooltip container */
+[data-tooltip] {
+	position: relative;
+	cursor: pointer;
+}
+
+/* Tooltip text */
+[data-tooltip]::before {
+	content: attr(data-tooltip);
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 5px 10px;
+	border-radius: 4px;
+	white-space: nowrap;
+	opacity: 0;
+	pointer-events: none;
+	z-index: 10;
+	font-size: 12px;
+}
+
+/* Tooltip arrow */
+[data-tooltip]::after {
+	content: '';
+	position: absolute;
+	top: 79%;
+	left: 50%;
+	transform: translateX(-50%);
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent black transparent;
+	opacity: 0;
+	z-index: 10;
+}
+
+/* Show tooltip on hover */
+[data-tooltip]:hover::before,
+[data-tooltip]:hover::after {
+	opacity: 1;
+}
+
+.pog-products__upload-img[data-tooltip]::before {
+	top: 60%;
+}
+
+.pog-products__upload-img[data-tooltip]::after {
+	top: 57%;
+}
+
+.pog-products__remove-product[data-tooltip]::before {
+	top: initial;
+	bottom: 100%;
+}
+
+.pog-products__remove-product[data-tooltip]::after {
+	top: initial;
+	bottom: 79%;
+	border-color: black transparent transparent transparent;
+}
+
+.sortable-item {
+	display: flex;
+	flex-direction: column;
+	border-radius: 4px;
+	position: relative;
+}
+
+.handle {
+	cursor: grab;
+	padding: 5px;
+	position: absolute;
+	top: 40px;
+	left: 15px;
+	z-index: 1;
+}
+
+.sortable-item.dragging .handle {
+	cursor: grabbing;
+}
+
+.sortable-item.dragging {
+	border: 2px dashed gray;
+	background-color: #fafafa;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pog-products__individual-product-wrapper .components-base-control {
+    margin-top: auto;
+}

@@ -1,0 +1,122 @@
+.graphical-editor-content-container {
+	margin: 0 !important;
+}
+/* Stle for the product listing container */
+.pog-products__products-listout {
+	max-width: 980px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 14px;
+}
+/* Product card wrapper styling */
+.pog-products__products-wrapper {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	transition: height 0.3s ease;
+}
+/* Style for the individual product card */
+.pog-products__individual-product-wrapper {
+	max-width: 33.3%;
+	width: 100%;
+	padding: 14px;
+	display: flex;
+	flex-direction: column;
+	/* max-height: 347px; */
+}
+
+a.pog-products__product-image,
+.pog-products__product-tile h3 {
+	text-decoration: none;
+}
+/* Product image styling */
+.pog-products__product-image img {
+	width: 100%;
+	height: 282px;
+}
+
+.pog-products__product-title {
+    height: 100%;
+}
+
+/* Product title styling */
+.pog-products__product-title h3,
+.pog-products__individual-product-wrapper h3,
+h3.block-editor-rich-text__editable.rich-text {
+	font-family: 'Museo W01 700', serif;
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #b6689a;
+	text-align: center;
+	margin: 8px !important;
+	text-transform: uppercase;
+}
+
+/* Spinner */
+#loading-spinner {
+	display: none;
+	margin-left: auto;
+    margin-right: auto;
+	width: 5%;
+}
+
+.load-more-products,
+.spinner {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	padding: 1px;
+	background: conic-gradient(#0000 10%, #b6689a) content-box;
+	mask:
+		repeating-conic-gradient(#0000 0deg, #000 1deg 20deg, #0000 21deg 36deg),
+		radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 calc(100% - 8px));
+	mask-composite: destination-in;
+	mask-composite: intersect;
+	animation: productloading 1s infinite steps(10);
+}
+
+@keyframes productloading {
+	to {
+		transform: rotate(1turn)
+	}
+}
+
+.loading,
+.pog-products__load-more-trigger {
+	margin-left: auto;
+    margin-right: auto;
+	width: 10%;
+}
+
+.pog-products__hidden {
+	display: none;
+}
+
+.pog-products__load-more-trigger {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Media queries for the small screen */
+@media screen and (max-width: 991px) {
+
+	.pog-products__products-listout {
+		padding: 14px 0;
+	}
+
+	.pog-products__individual-product-wrapper {
+		width: 100%;
+		max-width: initial;
+		padding: 14px 0;
+	}
+
+	.pog-products__product-image img {
+		object-fit: cover;
+	}
+
+}

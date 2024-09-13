@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "md-modules/pog-product-images",
+  "version": "1.1.0",
+  "title": "POG Products",
+  "category": "md-modules",
+  "icon": "excerpt-view",
+  "description": "Product Block for adding the prdouct and it's related title & links.",
+  "keywords": ["POG Block", "POG Products"],
+  "supports": {
+    "html": false
+  },
+  "textdomain": "pog-block",
+  "attributes": {
+    "editableMode": {
+      "type": "boolean",
+      "default": true
+    },
+    "productImgs": {
+      "type": "array",
+      "default": []
+    },
+    "productUrls": {
+      "type": "array",
+      "default": []
+    },
+    "productTitles": {
+      "type": "array",
+      "default": []
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
